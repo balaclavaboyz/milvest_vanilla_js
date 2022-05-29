@@ -1,17 +1,113 @@
-body,
-html {
+/* roboto-mono-100 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 100;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-100.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-300 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 300;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-300.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-200 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 200;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-200.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-regular - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-regular.woff2")
+            format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-regular.woff")
+            format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-500 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-500.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-600 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-600.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-700 - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-mono-italic - latin */
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: local(""),
+        url("../assets/fonts/roboto-mono-v21-latin-italic.woff2")
+            format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../assets/fonts/roboto-mono-v21-latin-italic.woff")
+            format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+    font-family: "roboto mono";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 .home {
     display: flex;
     justify-content: center;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
 }
 .container {
     width: 75%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 .navbar {
     display: flex;
@@ -33,4 +129,45 @@ html {
     height: 900px;
     background-size: cover;
     background-position: 10% 80%;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5px;
+    gap: 5px;
+}
+.galeria > img {
+    width: 100%;
+    border-radius: 3%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+footer > .menu {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialLinks {
+    height: 32px;
+}
+.wrapperSocial > a {
+    padding: 8px;
+    text-decoration-line: underline;
+}
+.menu > ul {
+    list-style: none;
+}
+.menu > ul > li {
+    padding: 5px 0;
+}
+a:visited {
+    color: black;
 }
