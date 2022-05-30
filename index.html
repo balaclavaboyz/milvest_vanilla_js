@@ -12,11 +12,12 @@
             href="./assets/bootstrap-assets/css/bootstrap.css"
         />
         <script src="./galeria.js"></script>
+        <script src="./sidebar.js"></script>
     </head>
     <body>
         <div class="home">
             <div class="container">
-                <div class="navbar">
+                <div id="navbar">
                     <img
                         style="width: 4rem"
                         src="./assets/logo.webp"
@@ -25,11 +26,23 @@
                     <a href="/">Home</a>
                     <a href="https://milvest.vesti.mobi/">Catálogo/Pedidos</a>
                     <a href="faq.html">Faq</a>
+                    <!-- hamburger menu -->
+                    <button
+                        aria-label="Abrir Menu"
+                        id="btn-mobile"
+                        aria-haspopup="true"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                    >
+                        Menu
+                        <span id="hamburger"></span>
+                    </button>
                 </div>
                 <div class="banner">
                     <div class="blackFilter">
                         <h1>
-                            Para Cada Estação <br> Um Look Diferente
+                            Para Cada Estação <br />
+                            Um Look Diferente
                         </h1>
                         <a
                             class="buttomBanner"
