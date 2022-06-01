@@ -1,4 +1,4 @@
-var dir = "/public/static";
+var dir = "/static";
 var fileextension = ".webp";
 
 $.ajax({
