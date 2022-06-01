@@ -27,16 +27,18 @@
                     <a href="https://milvest.vesti.mobi/">Catálogo/Pedidos</a>
                     <a href="faq.html">Faq</a>
                     <!-- hamburger menu -->
-                    <button
-                        aria-label="Abrir Menu"
-                        id="btn-mobile"
-                        aria-haspopup="true"
-                        aria-controls="menu"
-                        aria-expanded="false"
-                    >
-                        Menu
-                        <span id="hamburger"></span>
-                    </button>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="/">Home</a></li>
+                            <li><a class="menu__item" href="https://milvest.vesti.mobi/">Catálogo/Pedidos</a></li>
+                            <li><a href="faq.html" class="menu__item">Faq</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="banner">
                     <div class="blackFilter">
@@ -58,11 +60,20 @@
                     </div>
                 </div>
                 <div class="titulo">
-                    <h2>Moda Feminina Atacado Bom Retiro</h2>
-                    <p>Criamos, Produzimos e Vendemos em Atacado</p>
-                </div>
-                <div class="subtitulo">
-                    <p>Lançamento</p>
+                    <h2 class="titulo-h2">Moda Feminina Atacado Bom Retiro</h2>
+                    <h2 class="titulo-h2-mobile">
+                        Moda <br>
+                        Feminina <br>
+                        Atacado <br>
+                        Bom Retiro
+                    </h2>
+                    <p class="titulo-p">Criamos, Produzimos e Vendemos em Atacado</p>
+                    <p class="titulo-p-mobile">
+                        Criamos, <br>
+                        Produzimos e<br>
+                        Vendemos
+                        Em Atacado
+                    </p>
                 </div>
                 <div id="galeria1" class="galeria"></div>
             </div>
