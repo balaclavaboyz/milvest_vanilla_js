@@ -1,4 +1,4 @@
-var dir = "/assets/gallery";
+var dir = "/public/";
 var fileextension = ".webp";
 
 $.ajax({
