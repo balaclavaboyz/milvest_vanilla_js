@@ -340,12 +340,12 @@ a {
 #menu__toggle {
     display: none;
 }
-.titulo-p-mobile{
+.titulo-p-mobile {
     display: none;
 }
 @media (max-width: 767px) {
     /* no links, no gap */
-    #navbar{
+    #navbar {
         gap: 0;
     }
     /* hide the links on mobile */
@@ -378,6 +378,9 @@ a {
         display: none;
     }
     .titulo .titulo-h2-mobile {
+        display: block;
+    }
+    .titulo-p-mobile {
         display: block;
     }
 
