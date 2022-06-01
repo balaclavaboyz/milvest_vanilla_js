@@ -1,4 +1,5 @@
 * {
+    font-family: 'merriweather';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -296,5 +297,6 @@ a {
     .menu__item:hover {
         background-color: #cfd8dc;
     }
-    /* hamburger end */
+  /* hamburger end */
 }
+  
