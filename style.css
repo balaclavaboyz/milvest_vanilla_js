@@ -343,7 +343,7 @@ a {
 .titulo-p-mobile {
     display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
     /* no links, no gap */
     #navbar {
         gap: 0;
