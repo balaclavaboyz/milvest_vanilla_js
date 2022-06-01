@@ -1,4 +1,4 @@
-var dir = "/public";
+var dir = "/photos";
 var fileextension = ".webp";
 
 jQuery.ajax({
