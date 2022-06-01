@@ -11,7 +11,7 @@ jQuery.ajax({
             .each(function () {
                 var filename = this.href
                     .replace(window.location.host, "")
-                    .replace("http://", "");
+                    .replace("https://", "");
                 jQuery("#galeria1").append("<img src='"  + filename + "'>");
             })
     },
