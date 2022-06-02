@@ -80,9 +80,6 @@
     .banner {
         height: 800px;
     }
-    .container {
-        width: 100%;
-    }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
