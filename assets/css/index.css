@@ -71,6 +71,9 @@
     display: none;
 }
 @media (max-width: 769px) {
+    *{
+        font-size: large;
+    }
     .banner > .blackFilter > h1 {
         font-size: x-large;
     }
