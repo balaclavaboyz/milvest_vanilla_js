@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/localizacao.css" />
+        <link rel="shortcut icon" href="./assets/logo.webp" type="image/x-icon">
+    <title>Localização</title>
+    <link rel="stylesheet" href="./assets/css/init.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="./assets/css/positions.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <div
+      style="display: flex; justify-content: center"
+      class="container-wrapper"
+    >
+      <div class="container">
+        <div id="navbar">
+          <img
+            style="width: 4rem"
+            src="./assets/logo.webp"
+            alt="logo da milvest, link para homepage"
+          />
+          <a href="/">Home</a>
+          <a href="https://milvest.vesti.mobi/">Catálogo/Pedidos</a>
+          <a href="faq.html">Faq</a>
+          <a href="localizacao.html">Localização</a>
+          <!-- hamburger menu -->
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="/">Home</a></li>
+              <li>
+                <a class="menu__item" href="https://milvest.vesti.mobi/"
+                  >Catálogo/Pedidos</a
+                >
+              </li>
+              <li>
+                <a href="faq.html" class="menu__item">Faq</a>
+              </li>
+              <li>
+                <a class="menu__item" href="localizacao.html">Localização</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_googlemaps">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="100%"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=rua%20aimores%20101&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><br />
+          <style>
+            iframe {
+              width: 75%;
+              height: 500px;
+            }
+            @media(max-width:769px){
+                iframe{
+                    width:100%
+                }
+            }
+            .mapouter {
+              position: relative;
+              text-align: center;
+              height: 100%;
+              width: 100%;
+            }</style
+          ><a href="https://www.embedgooglemap.net">embedgooglemap.net</a
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 100%;
+              width: 100%;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="menu">
+        <p>Milvest</p>
+        <div class="wrapperSocial">
+          <a href="https://www.instagram.com/milvest_oficial/"
+            ><img
+              class="socialLinks"
+              src="./assets/black_instagram.svg"
+              alt="link para instagram da milvest" /></a
+          ><a href="https://wa.me/5511942419476"
+            ><img
+              class="socialLinks"
+              src="./assets/black_whatsapp.svg"
+              alt="link para whatsapp"
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="https://milvest.vesti.mobi/">Catálogo/Pedidos</a>
+          </li>
+          <li><a href="faq.html">Faq</a></li>
+          <li><a href="politica.html">Política de Privacidade</a></li>
+        </ul>
+        <div>
+          <p>2023 Peter Kim</p>
+          <div>
+            <a
+              href="https://iconscout.com/icons/whatsapp"
+              rel="noreferrer"
+              target="_blank"
+              class="underline"
+              >Whatsapp Icon</a
+            >
+            by
+            <a
+              class="underline"
+              href="https://iconscout.com/contributors/unicons"
+              >Unicons Font</a
+            >
+            on <a href="https://iconscout.com">IconScout</a>
+          </div>
+          <div>
+            <a
+              rel="noreferrer"
+              href="https://iconscout.com/icons/instagram"
+              target="_blank"
+              class="underline"
+              >Instagram Icon</a
+            >
+            by
+            <a
+              rel="noreferrer"
+              href="https://iconscout.com/contributors/unicons"
+              target="_blank"
+              class="underline"
+              >Unicons Font</a
+            >
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://wa.me/5511942419476"
+          ><img
+            style="position: fixed; height: 64px; right: 24px; bottom: 16px"
+            src="./assets/whatsapp.svg"
+            alt="link de whatsapp da milvest"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
