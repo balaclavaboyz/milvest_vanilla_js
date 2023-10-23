@@ -9,15 +9,13 @@
 #navbar > a {
     text-decoration-line: none;
     font-size: 1.5rem;
+    color:black;
 }
 .hamburger-menu {
     display: none;
 }
 #menu__toggle {
     display: none;
-}
-a {
-    color: inherit;
 }
 @media(max-width:769px){
     /* no links, no gap */
