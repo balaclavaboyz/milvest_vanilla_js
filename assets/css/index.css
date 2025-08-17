@@ -45,7 +45,7 @@
 .blackFilter {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
     content: "";
